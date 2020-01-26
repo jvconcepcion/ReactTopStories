@@ -46,6 +46,7 @@ const TopstoriesContent = props => {
 	const TopStoriesImage = styled.img`
 		width: 640px;
 		height: 360px;
+
 		@media only screen and (max-width: 767px) {
 			width: 100%;
 			height: unset;

@@ -3,8 +3,8 @@
 import React from 'react';
 import axios from 'axios';
 
-import Layout from '../components/Layout';
-import TopstoriesContent from '../components/TopstoriesContent';
+import Layout from '../components/Main/Layout';
+import TopstoriesContent from '../components/Main/TopstoriesContent';
 
 const Index = props => {
 	return (

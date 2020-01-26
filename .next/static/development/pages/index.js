@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
-/***/ "./components/Layout.js":
-/*!******************************!*\
-  !*** ./components/Layout.js ***!
-  \******************************/
+/***/ "./components/Main/Layout.js":
+/*!***********************************!*\
+  !*** ./components/Main/Layout.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/components/Layout.js";
+var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/components/Main/Layout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject2() {
@@ -76,10 +76,10 @@ var Layout = function Layout(props) {
 
 /***/ }),
 
-/***/ "./components/TopstoriesContent.js":
-/*!*****************************************!*\
-  !*** ./components/TopstoriesContent.js ***!
-  \*****************************************/
+/***/ "./components/Main/TopstoriesContent.js":
+/*!**********************************************!*\
+  !*** ./components/Main/TopstoriesContent.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_id_swiper__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_id_swiper__WEBPACK_IMPORTED_MODULE_4__);
 
 
-var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/components/TopstoriesContent.js";
+var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/components/Main/TopstoriesContent.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject4() {
@@ -108,7 +108,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n\t\twidth: 640px;\n\t\theight: 360px;\n\t\t@media only screen and (max-width: 767px) {\n\t\t\twidth: 100%;\n\t\t\theight: unset;\n\t\t}\n\t"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n\t\twidth: 640px;\n\t\theight: 360px;\n\n\t\t@media only screen and (max-width: 767px) {\n\t\t\twidth: 100%;\n\t\t\theight: unset;\n\t\t}\n\t"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -173,13 +173,13 @@ var TopstoriesContent = function TopstoriesContent(props) {
       key: articleID,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139
+        lineNumber: 140
       },
       __self: this
     }, __jsx(TopStoriesImageWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140
+        lineNumber: 141
       },
       __self: this
     }, __jsx(TopStoriesImage, {
@@ -187,31 +187,31 @@ var TopstoriesContent = function TopstoriesContent(props) {
       alt: "",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141
+        lineNumber: 142
       },
       __self: this
     })), __jsx(TopStoriesTxtWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 143
+        lineNumber: 144
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 144
+        lineNumber: 145
       },
       __self: this
     }, items.title), __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145
+        lineNumber: 146
       },
       __self: this
     }, items.metadesc), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146
+        lineNumber: 147
       },
       __self: this
     }, __jsx("a", {
@@ -220,7 +220,7 @@ var TopstoriesContent = function TopstoriesContent(props) {
       rel: "noopener noreferrer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147
+        lineNumber: 148
       },
       __self: this
     }, "Read More"))));
@@ -228,7 +228,7 @@ var TopstoriesContent = function TopstoriesContent(props) {
   return __jsx(react_id_swiper__WEBPACK_IMPORTED_MODULE_4___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 156
     },
     __self: this
   }), getTopStories);
@@ -17611,8 +17611,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_TopstoriesContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/TopstoriesContent */ "./components/TopstoriesContent.js");
+/* harmony import */ var _components_Main_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Main/Layout */ "./components/Main/Layout.js");
+/* harmony import */ var _components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Main/TopstoriesContent */ "./components/Main/TopstoriesContent.js");
 
 var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -17626,13 +17626,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var Index = function Index(props) {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return __jsx(_components_Main_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, __jsx(_components_TopstoriesContent__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_4__["default"], {
     getData: props.data,
     __source: {
       fileName: _jsxFileName,
