@@ -1,9 +1,7 @@
-/* eslint-disable func-names */
-/* eslint-disable consistent-return */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
 import Swiper from 'react-id-swiper';
+import PropTypes from 'prop-types';
 
 const TopstoriesContent = props => {
 	const TopStoriesItemWrapper = styled.div`
@@ -157,4 +155,7 @@ const TopstoriesContent = props => {
 	return <Swiper {...settings}>{getTopStories}</Swiper>;
 };
 
+TopstoriesContent.propTypes = {
+	getData: PropTypes.objectOf(PropTypes.any).isRequired,
+};
 export default TopstoriesContent;

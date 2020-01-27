@@ -170,15 +170,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_id_swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-id-swiper */ "react-id-swiper");
 /* harmony import */ var react_id_swiper__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_id_swiper__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 
 var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/components/Main/TopstoriesContent.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-/* eslint-disable func-names */
-
-/* eslint-disable consistent-return */
-
-/* eslint-disable react/prop-types */
 
 
 
@@ -223,13 +220,13 @@ const TopstoriesContent = props => {
       key: articleID,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141
+        lineNumber: 139
       },
       __self: undefined
     }, __jsx(TopStoriesImageWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 142
+        lineNumber: 140
       },
       __self: undefined
     }, __jsx(TopStoriesImage, {
@@ -237,31 +234,31 @@ const TopstoriesContent = props => {
       alt: "",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 143
+        lineNumber: 141
       },
       __self: undefined
     })), __jsx(TopStoriesTxtWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145
+        lineNumber: 143
       },
       __self: undefined
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146
+        lineNumber: 144
       },
       __self: undefined
     }, items.title), __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147
+        lineNumber: 145
       },
       __self: undefined
     }, items.metadesc), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 148
+        lineNumber: 146
       },
       __self: undefined
     }, __jsx("a", {
@@ -270,7 +267,7 @@ const TopstoriesContent = props => {
       rel: "noopener noreferrer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149
+        lineNumber: 147
       },
       __self: undefined
     }, "Read More"))));
@@ -278,12 +275,15 @@ const TopstoriesContent = props => {
   return __jsx(react_id_swiper__WEBPACK_IMPORTED_MODULE_3___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 155
     },
     __self: undefined
   }), getTopStories);
 };
 
+TopstoriesContent.propTypes = {
+  getData: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.objectOf(prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.any).isRequired
+};
 /* harmony default export */ __webpack_exports__["default"] = (TopstoriesContent);
 
 /***/ }),
@@ -345,31 +345,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Main_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Main/Layout */ "./components/Main/Layout.js");
-/* harmony import */ var _components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Main/TopstoriesContent */ "./components/Main/TopstoriesContent.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Main_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Main/Layout */ "./components/Main/Layout.js");
+/* harmony import */ var _components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Main/TopstoriesContent */ "./components/Main/TopstoriesContent.js");
 var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* eslint-disable consistent-return */
 
-/* eslint-disable react/prop-types */
 
 
 
 
 
 const Index = props => {
-  return __jsx(_components_Main_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(_components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    getData: props.data,
+  return __jsx(_components_Main_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
+    },
+    __self: undefined
+  }, __jsx(_components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    getData: props.data,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
     },
     __self: undefined
   }));
@@ -388,6 +389,9 @@ Index.getInitialProps = async () => {
   }
 };
 
+Index.propTypes = {
+  data: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.objectOf(prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.any).isRequired
+};
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
@@ -423,6 +427,17 @@ module.exports = require("core-js/library/fn/object/assign");
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-unfetch");
+
+/***/ }),
+
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
 
 /***/ }),
 

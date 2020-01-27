@@ -1,7 +1,8 @@
 /* eslint-disable consistent-return */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import PropTypes from 'prop-types';
+
 import Layout from '../components/Main/Layout';
 import TopstoriesContent from '../components/Main/TopstoriesContent';
 
@@ -24,6 +25,10 @@ Index.getInitialProps = async () => {
 		// eslint-disable-next-line no-console
 		console.log(error);
 	}
+};
+
+Index.propTypes = {
+	data: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default Index;

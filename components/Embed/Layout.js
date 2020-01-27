@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Layout = props => {
 	const LayoutStyle = styled.div`
@@ -30,8 +30,11 @@ const Layout = props => {
 			}
 		}
 	`;
-
 	return <LayoutStyle>{props.children}</LayoutStyle>;
+};
+
+Layout.propTypes = {
+	children: PropTypes.string.isRequired,
 };
 
 export default Layout;
