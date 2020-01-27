@@ -114,50 +114,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Layout = props => {
-  const LayoutStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-		margin: 20;
-		padding: 20;
-		.swiper-container-horizontal > .swiper-pagination-bullets,
-		.swiper-pagination-custom,
-		.swiper-pagination-fraction {
-			left: 25% !important;
-		}
-
-		.swiper-pagination-bullet-active,
-		.swiper-pagination-bullet {
-			background: #000 !important;
-		}
-
-		@media only screen and (max-width: 767px) {
-			.swiper-container-horizontal > .swiper-pagination-bullets,
-			.swiper-pagination-custom,
-			.swiper-pagination-fraction {
-				left: 0 !important;
-			}
-
-			.swiper-pagination-bullet-active,
-			.swiper-pagination-bullet {
-				background: #fff !important;
-			}
-		}
-	`;
-  const ShareAndEmbed = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		width: 100%;
-		height: 100%;
-		margin-bottom: -0.5%;
-		background-color: #f2f2f2;
-
-		p {
-			margin-left: 24px;
-			margin-right: 24px;
-		}
-		p a {
-			color: #000;
-		}
-	`;
+  const LayoutStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+    displayName: "Layout__LayoutStyle",
+    componentId: "sc-5fsgpt-0"
+  })(["margin:20;padding:20;.swiper-container-horizontal > .swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{left:25% !important;}.swiper-pagination-bullet-active,.swiper-pagination-bullet{background:#000 !important;}@media only screen and (max-width:767px){.swiper-container-horizontal > .swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{left:0 !important;}.swiper-pagination-bullet-active,.swiper-pagination-bullet{background:#fff !important;}}"]);
+  const ShareAndEmbed = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+    displayName: "Layout__ShareAndEmbed",
+    componentId: "sc-5fsgpt-1"
+  })(["display:flex;flex-direction:row;align-items:center;width:100%;height:100%;margin-bottom:-0.5%;background-color:#f2f2f2;p{margin-left:24px;margin-right:24px;}p a{color:#000;}"]);
   return __jsx(LayoutStyle, {
     __source: {
       fileName: _jsxFileName,
@@ -220,113 +184,22 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 const TopstoriesContent = props => {
-  const TopStoriesItemWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
-		@font-face {
-			src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
-			font-family: 'Roboto', sans-serif;
-		}
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		margin: 8px 0;
-		background-color: rgb(235, 237, 255);
-
-		@media only screen and (max-width: 767px) {
-			flex-direction: column;
-		}
-	`;
-  const TopStoriesImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
-		max-width: 640px;
-		min-height: 360px;
-		padding: 24px;
-		@media only screen and (max-width: 767px) {
-			&&::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-				opacity: 0.7;
-				z-index: 1;
-			}
-			padding: 0px;
-			min-height: unset;
-		}
-	`;
-  const TopStoriesImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img`
-		width: 640px;
-		height: 360px;
-
-		@media only screen and (max-width: 767px) {
-			width: 100%;
-			height: unset;
-		}
-	`;
-  const TopStoriesTxtWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
-		margin: 10px 35px 10px 10px;
-
-		h2 {
-			font-family: 'Roboto', sans-serif;
-			font-size: 35px;
-			color: rgb(240, 79, 60);
-		}
-
-		h3 {
-			font-family: 'Roboto', sans-serif;
-			font-size: 18px;
-			font-weight: 400;
-		}
-
-		p {
-			margin: 42px 0;
-		}
-
-		p a {
-			font-family: 'Roboto', sans-serif;
-			font-size: 22px;
-			text-decoration: none;
-			color: #333;
-			border: solid 1px #333;
-			padding: 10px;
-		}
-
-		p a:visited {
-			color: #333;
-		}
-		@media only screen and (max-width: 767px) {
-			margin: -45px 0px 0px 0px;
-			padding: 14px;
-			background-image: linear-gradient(
-				to bottom,
-				rgba(0, 0, 0, 0.2),
-				rgba(0, 0, 0, 1),
-				rgba(0, 0, 0, 1),
-				rgba(0, 0, 0, 1),
-				rgba(0, 0, 0, 1)
-			);
-			h2 {
-				font-size: 20px;
-			}
-			h3 {
-				font-size: 14px;
-				color: #fff;
-			}
-			p {
-				margin: 35px 0 52px 0;
-			}
-			p a {
-				font-size: 16px;
-				color: #fff;
-				border: solid 1px #fff;
-			}
-
-			p a:visited {
-				color: #fff;
-			}
-		}
-	`;
+  const TopStoriesItemWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+    displayName: "TopstoriesContent__TopStoriesItemWrapper",
+    componentId: "sc-1fk6sap-0"
+  })(["@font-face{src:url(https://fonts.googleapis.com/css?family=Roboto&display=swap);font-family:'Roboto',sans-serif;}display:flex;flex-direction:row;width:100%;margin:8px 0;background-color:rgb(235,237,255);@media only screen and (max-width:767px){flex-direction:column;}"]);
+  const TopStoriesImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+    displayName: "TopstoriesContent__TopStoriesImageWrapper",
+    componentId: "sc-1fk6sap-1"
+  })(["max-width:640px;min-height:360px;padding:24px;@media only screen and (max-width:767px){&&::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2));opacity:0.7;z-index:1;}padding:0px;min-height:unset;}"]);
+  const TopStoriesImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img.withConfig({
+    displayName: "TopstoriesContent__TopStoriesImage",
+    componentId: "sc-1fk6sap-2"
+  })(["width:640px;height:360px;@media only screen and (max-width:767px){width:100%;height:unset;}"]);
+  const TopStoriesTxtWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+    displayName: "TopstoriesContent__TopStoriesTxtWrapper",
+    componentId: "sc-1fk6sap-3"
+  })(["margin:10px 35px 10px 10px;h2{font-family:'Roboto',sans-serif;font-size:35px;color:rgb(240,79,60);}h3{font-family:'Roboto',sans-serif;font-size:18px;font-weight:400;}p{margin:42px 0;}p a{font-family:'Roboto',sans-serif;font-size:22px;text-decoration:none;color:#333;border:solid 1px #333;padding:10px;}p a:visited{color:#333;}@media only screen and (max-width:767px){margin:-60px 0px 0px 0px;padding:14px;background-image:linear-gradient( to bottom,rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1) );h2{font-size:20px;}h3{font-size:14px;color:#fff;}p{margin:35px 0 52px 0;}p a{font-size:16px;color:#fff;border:solid 1px #fff;}p a:visited{color:#fff;}}"]);
   const settings = {
     pagination: {
       el: '.swiper-pagination',
@@ -338,7 +211,8 @@ const TopstoriesContent = props => {
       disableOnInteraction: false
     },
     effect: 'fade',
-    autoHeight: true
+    autoHeight: true,
+    loop: true
   };
   const getTopStories = props.getData.data.map(items => {
     const finalUrl = `https://www.rappler.com${items.url}`;
@@ -349,13 +223,13 @@ const TopstoriesContent = props => {
       key: articleID,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140
+        lineNumber: 141
       },
       __self: undefined
     }, __jsx(TopStoriesImageWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141
+        lineNumber: 142
       },
       __self: undefined
     }, __jsx(TopStoriesImage, {
@@ -363,31 +237,31 @@ const TopstoriesContent = props => {
       alt: "",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 142
+        lineNumber: 143
       },
       __self: undefined
     })), __jsx(TopStoriesTxtWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 144
+        lineNumber: 145
       },
       __self: undefined
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145
+        lineNumber: 146
       },
       __self: undefined
     }, items.title), __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146
+        lineNumber: 147
       },
       __self: undefined
     }, items.metadesc), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147
+        lineNumber: 148
       },
       __self: undefined
     }, __jsx("a", {
@@ -396,7 +270,7 @@ const TopstoriesContent = props => {
       rel: "noopener noreferrer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 148
+        lineNumber: 149
       },
       __self: undefined
     }, "Read More"))));
@@ -404,7 +278,7 @@ const TopstoriesContent = props => {
   return __jsx(react_id_swiper__WEBPACK_IMPORTED_MODULE_3___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 157
     },
     __self: undefined
   }), getTopStories);
@@ -469,8 +343,8 @@ function _extends() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Main_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Main/Layout */ "./components/Main/Layout.js");
 /* harmony import */ var _components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Main/TopstoriesContent */ "./components/Main/TopstoriesContent.js");
 var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/pages/index.js";
@@ -488,14 +362,14 @@ const Index = props => {
   return __jsx(_components_Main_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx(_components_Main_TopstoriesContent__WEBPACK_IMPORTED_MODULE_3__["default"], {
     getData: props.data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: undefined
   }));
@@ -503,8 +377,8 @@ const Index = props => {
 
 Index.getInitialProps = async () => {
   try {
-    const res = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://svc.rappler.com/p/topstories');
-    const data = await res.data;
+    const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()('https://svc.rappler.com/p/topstories');
+    const data = await res.json();
     return {
       data
     };
@@ -530,17 +404,6 @@ module.exports = __webpack_require__(/*! /Users/jonathanconcepcion/Documents/nex
 
 /***/ }),
 
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
-
-/***/ }),
-
 /***/ "core-js/library/fn/object/assign":
 /*!***************************************************!*\
   !*** external "core-js/library/fn/object/assign" ***!
@@ -549,6 +412,17 @@ module.exports = require("axios");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/assign");
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 

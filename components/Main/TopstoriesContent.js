@@ -85,11 +85,11 @@ const TopstoriesContent = props => {
 			color: #333;
 		}
 		@media only screen and (max-width: 767px) {
-			margin: -45px 0px 0px 0px;
+			margin: -60px 0px 0px 0px;
 			padding: 14px;
 			background-image: linear-gradient(
 				to bottom,
-				rgba(0, 0, 0, 0.2),
+				rgba(0, 0, 0, 0),
 				rgba(0, 0, 0, 1),
 				rgba(0, 0, 0, 1),
 				rgba(0, 0, 0, 1),
@@ -129,6 +129,7 @@ const TopstoriesContent = props => {
 		},
 		effect: 'fade',
 		autoHeight: true,
+		loop: true,
 	};
 
 	const getTopStories = props.getData.data.map(items => {
