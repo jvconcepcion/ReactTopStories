@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -167,7 +167,7 @@ class Carousel extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   }
 
   async getRawData() {
-    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get('https://svc.rappler.com/p/topstories');
+    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(this.props.api);
     const {
       data
     } = await res.data;
@@ -299,14 +299,18 @@ Carousel.propTypes = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Carousel */ "./components/Carousel/Carousel.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Carousel */ "./components/Carousel/Carousel.js");
 var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/components/Carousel/CarouselR3Style.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const CarouselR3Style = () => {
-  return __jsx(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], {
+
+const CarouselR3Style = props => {
+  return __jsx(_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    api: props.api,
     bgColor: "#f4f4f4",
     desktopHeader: "#333332",
     mobileHeader: "#e76229",
@@ -317,12 +321,15 @@ const CarouselR3Style = () => {
     buttonBgColor: "#e76229",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: undefined
   });
 };
 
+CarouselR3Style.propTypes = {
+  api: prop_types__WEBPACK_IMPORTED_MODULE_1__["PropTypes"].string.isRequired
+};
 /* harmony default export */ __webpack_exports__["default"] = (CarouselR3Style);
 
 /***/ }),
@@ -338,14 +345,18 @@ const CarouselR3Style = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Carousel */ "./components/Carousel/Carousel.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Carousel */ "./components/Carousel/Carousel.js");
 var _jsxFileName = "/Users/jonathanconcepcion/Documents/next-js-proj/topstories/components/Carousel/CarouselR5Style.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const CarouselR5Style = () => {
-  return __jsx(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], {
+
+const CarouselR5Style = props => {
+  return __jsx(_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    api: props.api,
     bgColor: "rgb(235, 237, 255)",
     desktopHeader: "rgb(240, 79, 60)",
     mobileHeader: "rgb(240, 79, 60)",
@@ -356,12 +367,15 @@ const CarouselR5Style = () => {
     buttonBgColor: "transparent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: undefined
   });
 };
 
+CarouselR5Style.propTypes = {
+  api: prop_types__WEBPACK_IMPORTED_MODULE_1__["PropTypes"].string.isRequired
+};
 /* harmony default export */ __webpack_exports__["default"] = (CarouselR5Style);
 
 /***/ }),
@@ -540,6 +554,7 @@ const Index = () => {
     },
     __self: undefined
   }, __jsx(_components_Carousel__WEBPACK_IMPORTED_MODULE_1__["CarouselR5Style"], {
+    api: "https://svc.rappler.com/p/topstories",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -552,7 +567,7 @@ const Index = () => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

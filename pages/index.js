@@ -6,7 +6,7 @@ import { Wrapper } from '../components/Wrapper';
 const Index = () => {
 	return (
 		<Wrapper embedBar='true'>
-			<CarouselR5Style />
+			<CarouselR5Style api='https://svc.rappler.com/p/topstories' />
 		</Wrapper>
 	);
 };

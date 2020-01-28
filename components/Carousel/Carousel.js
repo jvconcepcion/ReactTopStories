@@ -149,7 +149,7 @@ class Carousel extends Component {
 	}
 
 	async getRawData() {
-		const res = await axios.get('https://svc.rappler.com/p/topstories');
+		const res = await axios.get(this.props.api);
 		const { data } = await res.data;
 		this.setState({ data });
 	}
@@ -203,6 +203,7 @@ class Carousel extends Component {
 }
 
 Carousel.propTypes = {
+	api: PropTypes.string.isRequired,
 	bgColor: PropTypes.string.isRequired,
 	desktopHeader: PropTypes.string.isRequired,
 	mobileHeader: PropTypes.string.isRequired,
