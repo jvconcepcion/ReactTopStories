@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Swiper from 'react-id-swiper';
 import axios from 'axios';
-import { PropTypes } from 'prop-types'
+import { PropTypes } from 'prop-types';
 
 const CarouselItemWrapper = styled.div`
 	@font-face {
