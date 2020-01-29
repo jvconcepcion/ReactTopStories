@@ -9,14 +9,17 @@
     "start": "next start",
     "test": "jest --watchAll",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --cache --fix"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix",
-      "pre-push": "npm run test:all",
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test",
       "...": "..."
     }
+  },
+  "lint-staged": {
+    "*.js": ["npm run lint:fix", "git add"]
   },
   "keywords": [],
   "author": "",
@@ -46,8 +49,9 @@
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^4.2.0",
-    "prettier": "^1.19.1",
     "jest": "^25.1.0",
-    "jest-cli": "^25.1.0"
+    "jest-cli": "^25.1.0",
+    "lint-staged": "^10.0.4",
+    "prettier": "^1.19.1"
   }
 }
