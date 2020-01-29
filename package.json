@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "test:all": "jest && npm run lint",
+    "test:all": "jest && npm run lint && npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --cache --fix"
   },
