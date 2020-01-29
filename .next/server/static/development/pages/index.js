@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -275,6 +275,7 @@ class Carousel extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 }
 
 Carousel.propTypes = {
+  api: prop_types__WEBPACK_IMPORTED_MODULE_5__["PropTypes"].string.isRequired,
   bgColor: prop_types__WEBPACK_IMPORTED_MODULE_5__["PropTypes"].string.isRequired,
   desktopHeader: prop_types__WEBPACK_IMPORTED_MODULE_5__["PropTypes"].string.isRequired,
   mobileHeader: prop_types__WEBPACK_IMPORTED_MODULE_5__["PropTypes"].string.isRequired,
@@ -567,7 +568,7 @@ const Index = () => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

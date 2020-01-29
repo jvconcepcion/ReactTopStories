@@ -252,6 +252,7 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
 Carousel.propTypes = {
+  api: prop_types__WEBPACK_IMPORTED_MODULE_11__["PropTypes"].string.isRequired,
   bgColor: prop_types__WEBPACK_IMPORTED_MODULE_11__["PropTypes"].string.isRequired,
   desktopHeader: prop_types__WEBPACK_IMPORTED_MODULE_11__["PropTypes"].string.isRequired,
   mobileHeader: prop_types__WEBPACK_IMPORTED_MODULE_11__["PropTypes"].string.isRequired,
@@ -19065,7 +19066,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjonathanconcepcion%2FDocuments%2Fnext-js-proj%2Ftopstories%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************************/
@@ -19088,5 +19089,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
