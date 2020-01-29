@@ -51,7 +51,7 @@ const Wrapper = props => {
 
 	return (
 		<LayoutStyle>
-			{props.embedBar ? (
+			{props.embedBar === 'true' ? (
 				<ShareAndEmbed>
 					<p>
 						<a href='#'>Embed</a>

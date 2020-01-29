@@ -5,8 +5,8 @@ import { CarouselR5Style } from '../components/Carousel';
 
 const Embed = () => {
 	return (
-		<Wrapper>
-			<CarouselR5Style />
+		<Wrapper embedBar='false'>
+			<CarouselR5Style api='https://svc.rappler.com/p/topstories' />
 		</Wrapper>
 	);
 };
